@@ -13,6 +13,7 @@ int *utworz(const int n)
     {
         t[i] = 0;
     }
+    return t;
 }
 
 void wypelnij(int *t, const int n, int min, int max)
