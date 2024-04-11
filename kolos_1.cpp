@@ -8,7 +8,6 @@ using namespace std;
 
 int *utworz(const int n)
 {
-    int* t = nullptr;
     int *t = new int[n];
     
     for (int i = 0; i < n; i++)
@@ -92,6 +91,7 @@ int main(int argc, char *argv[])
     cout << "Podaj rozmiar dla tablicy. Rozmiar musi byc wiekszy od 0." << endl;
     cin >> n;
     int *t = utworz(n);
+    t = nullptr;
 
     if (n > 0 && min < 0 && max > 0)
     {
