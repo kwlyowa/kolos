@@ -92,30 +92,7 @@ int main(int argc, char *argv[])
     cin >> n;
     int *t = utworz(n);
 
-    if (n > 0 && min < 0 && max > 0)
-    {
-        cout << "Wartosci sa poprawny" << endl;
-    }
-    else
-    {
-        do
-        {
-            cout << "Podaj poprawny wartosci!" << endl;
-            cout << "Podaj rozmiar dla tablicy. Rozmiar musi byc wiekszy od 0." << endl;
-            cin >> n;
-            cout << "Podaj liczbe minimalna. Musi byc mniejsza od 0." << endl;
-            cin >> min;
-            cout << "Podaj liczbe maksymalna. Musi byc wieksza od 0" << endl;
-            cin >> max;
-        } while (!(n > 0 && min < 0 && max > 0));
-    }
-
-    wypelnij(t, n, min, max);
-    wypisz(t, n);
-
-    const char *file_in = "file_in.txt";
-    const char *file_out = "file_out.txt";
-    selektor(file_in, file_out);
+ 
 
     t = nullptr;
     delete[] t;
