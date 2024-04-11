@@ -112,10 +112,11 @@ int main(int argc, char *argv[])
 
     wypelnij(t, n, min, max);
     wypisz(t, n);
-    t = nullptr;
-    delete[] t;
 
     const char *file_in = "file_in.txt";
     const char *file_out = "file_out.txt";
     selektor(file_in, file_out);
+
+    t = nullptr;
+    delete[] t;
 }
