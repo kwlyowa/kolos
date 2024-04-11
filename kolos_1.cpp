@@ -63,7 +63,7 @@ void selektor(const char *file_in, const char *file_out)
         cout << "Wystapil blad" << endl;
     }
 
-    string line;
+    char* line;
     while (input >> line)
     {
         if (mail(line))
