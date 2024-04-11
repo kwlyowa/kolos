@@ -111,7 +111,7 @@ int main(int argc, char *argv[])
     }
 
     wypelnij(t, n, min, max);
-    //wypisz(t, n);
+    wypisz(t, n);
     //t = nullptr;
     delete[] t;
     t = nullptr;
