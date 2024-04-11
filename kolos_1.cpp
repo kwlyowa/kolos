@@ -114,6 +114,7 @@ int main(int argc, char *argv[])
     wypisz(t, n);
     //t = nullptr;
     delete[] t;
+    t = nullptr;
 
     const char *file_in = "file_in.txt";
     const char *file_out = "file_out.txt";
