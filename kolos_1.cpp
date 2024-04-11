@@ -91,7 +91,6 @@ int main(int argc, char *argv[])
     cout << "Podaj rozmiar dla tablicy. Rozmiar musi byc wiekszy od 0." << endl;
     cin >> n;
     int *t = utworz(n);
-    t = nullptr;
 
     if (n > 0 && min < 0 && max > 0)
     {
@@ -113,10 +112,11 @@ int main(int argc, char *argv[])
 
     wypelnij(t, n, min, max);
     wypisz(t, n);
+    //t = nullptr;
+    delete[] t;
 
     const char *file_in = "file_in.txt";
     const char *file_out = "file_out.txt";
     selektor(file_in, file_out);
 
-    delete[] t;
 }
